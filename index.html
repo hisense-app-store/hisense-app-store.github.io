@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Hisense App Store</title>
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" media="screen" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/lib.js?1"></script>
+    <script type="text/javascript" src="/assets/js/main.js?1"></script>
+</head>
+<body class="bg-light">
+    <div id="debug" class="bg-dark text-white hide"></div>
+
+    <div id="container"></div>
+
+    <div class="bg-secondary tile hide" id="empty_tile">
+        <div class="icon">
+            <img src="" />
+        </div>
+        <div class="desc text-white">
+            <div class="name"></div>
+            <div class="text"></div>
+        </div>
+        <div class="action">
+            <button type="button"  class="btn btn-info install">Install</button>
+            <button type="button" class="btn btn-danger uninstall hide">Uninstall</button>
+        </div>
+    </div>
+
+    <div id="unsupport" class="bg-secondary text-white hide">
+        <div>
+            <h2>Your device is not supported</h2>
+            This App Store only supports TVs with Hisense VIDAA OS.
+        </div>
+    </div>
+</body>
+</html>
