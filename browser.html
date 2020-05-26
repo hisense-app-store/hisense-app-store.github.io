@@ -55,18 +55,33 @@
         <button id="openBtn" class="btn btn-lg btn-primary btn-block" type="button">Open</button>
     </form>
     <script type="text/javascript">
+        function getParameterByName(name) {
+            var url = window.location.href;
+            var regex = new RegExp('[?&]' + name.replace(/[\[\]]/g, '\\$&') + '(=([^&#]*)|&|#|$)');
+            var results = regex.exec(url);
+            if (!results) {
+                return null;
+            }
+            if (!results[2]) {
+                return '';
+            }
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        var storageKey = getParameterByName('storage-key') || 'fsb_url';
+
         var input = document.getElementById('inputURL');
         var button = document.getElementById('openBtn');
 
         button.onclick = function() {
             if (localStorage || false) {
-                localStorage.setItem('fsb_url', input.value);
+                localStorage.setItem(storageKey, input.value);
             }
             window.location = input.value;
         };
 
         if (localStorage || false) {
-            var url = localStorage.getItem('fsb_url');
+            var url = localStorage.getItem(storageKey);
             if (url) {
                 input.value = url;
             }
