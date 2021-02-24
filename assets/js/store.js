@@ -12,9 +12,21 @@ var APP_STORE = [
         text: 'Web browser that allows for full screen viewing.'
     },
     {
+        appid: 'plex',
+        name: 'Plex',
+        url: 'http://plex.tv/web/tv/hisense',
+        text: 'Plex – the perfect way to watch your media library on Smart TV.'
+    },
+    {
         appid: 'ott_player',
         name: 'Ott Player',
-        url: 'http://widget.ottplayer.es/',
+        url: 'http://widget.ottplayer.es',
         text: 'Ott Player - a service that allows you to collect all your IP-TV in one playlist, adjust the channel order, receive electronic program guide.'
+    },
+    {
+        appid: 'vplay_one',
+        name: 'vPlay',
+        url: 'http://web.vplay.one',
+        text: 'vPlay - online cinema.'
     }
 ];
