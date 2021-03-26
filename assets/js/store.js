@@ -28,5 +28,11 @@ var APP_STORE = [
         name: 'vPlay',
         url: 'http://web.vplay.one',
         text: 'vPlay - online cinema.'
+    },
+    {
+        appid: 'media_station_x',
+        name: 'Media Station X',
+        url: 'http://msx.benzac.de',
+        text: 'Media Station X is a cross-platform web application for creating customized media pages (consisting of videos, audio files, images, texts, and links).'
     }
 ];
