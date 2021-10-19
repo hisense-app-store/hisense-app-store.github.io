@@ -34,5 +34,11 @@ var APP_STORE = [
         name: 'Media Station X',
         url: 'http://msx.benzac.de',
         text: 'Media Station X is a cross-platform web application for creating customized media pages (consisting of videos, audio files, images, texts, and links).'
+    },
+    {
+        appid: 'lampa_tv',
+        name: 'Lampa',
+        url: 'http://lampa-tv.github.io',
+        text: 'Watch TV Shows Online, Watch Movies Online'
     }
 ];
