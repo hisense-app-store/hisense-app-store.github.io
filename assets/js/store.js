@@ -23,12 +23,12 @@ var APP_STORE = [
         url: 'http://widget.ottplayer.es',
         text: 'Ott Player - a service that allows you to collect all your IP-TV in one playlist, adjust the channel order, receive electronic program guide.'
     },
-    {
+    /*{
         appid: 'vplay_one',
         name: 'vPlay',
         url: 'http://web.vplay.one',
         text: 'vPlay - online cinema.'
-    },
+    },*/
     {
         appid: 'media_station_x',
         name: 'Media Station X',
